@@ -1,118 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Admin Dashboard</title>
-  </head>
-  <body>
-    <!--SIDEBAR-->
-    <nav class="">
-      <div
-        class="container flex flex-col h-screen w-64 fixed bg-teal-700 px-8 pt-4"
-      >
-        <!--logo-->
-        <div class="flex items-center p-2 space-x-2 ">
-          <img src="/assets/view-dashboard.svg" class="w-8 h-8" />
-          <a href="#" class="text-2xl font-bold text-white">Dashboard</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Admin Dashboard</title>
+</head>
+
+<body>
+  <!--SIDEBAR-->
+  <nav class="">
+    <div class="container flex flex-col h-screen w-64 fixed bg-teal-700">
+      <!--logo-->
+      <div class="flex items-center p-4 space-x-2">
+        <img src="/assets/view-dashboard.svg" class="w-8 h-8" />
+        <a href="#" class="text-2xl font-bold text-white">Dashboard</a>
+      </div>
+
+      <!--menu 1-->
+      <div class="flex flex-col mt-12">
+        <!--home-->
+        <a href="#" class="block flex items-center space-x-2 hover:bg-teal-900 p-4"><img src="/assets/home.svg"
+            class="w-6 h-6" /><span class="font-bold text-lg text-white">Home</span></a>
+        <!--end home-->
+
+        <!--profile-->
+        <a href="#" class="flex items-center space-x-2 hover:bg-teal-900 p-4"><img src="/assets/account.svg"
+            class="w-6 h-6" /><span class="font-bold text-lg text-white">Profile</span></a>
+        <!--end profile-->
+
+        <!--messages-->
+        <a href="#" class="flex items-center space-x-2 hover:bg-teal-900 p-4"><img src="/assets/message.svg"
+            class="w-6 h-6" /><span class="font-bold text-lg text-white">Messages</span></a>
+        <!--end messages-->
+
+        <!--history-->
+        <a href="#" class="flex items-center space-x-2 hover:bg-teal-900 p-4"><img src="/assets/history.svg"
+            class="w-6 h-6" /><span class="font-bold text-lg text-white">History</span></a>
+        <!--end history-->
+
+        <!--tasks-->
+        <a href="#" class="flex items-center space-x-2 hover:bg-teal-900 p-4"><img src="/assets/calendar-check.svg"
+            class="w-6 h-6" /><span class="font-bold text-lg text-white">Task</span></a>
+        <!--end tasks-->
+
+        <!--communities-->
+        <a href="#" class="flex items-center space-x-2 hover:bg-teal-900 p-4"><img src="/assets/account-group.svg"
+            class="w-6 h-6" /><span class="font-bold text-lg text-white">Communities</span></a>
+        <!--end communities-->
+      </div>
+
+      <!--menu 2-->
+      <div class="flex flex-col mt-12">
+        <!--settings-->
+        <a href="#" class="flex items-center space-x-2 hover:bg-teal-900 p-4"><img src="/assets/cog.svg"
+            class="w-6 h-6" /><span class="font-bold text-lg text-white">Settings</span></a>
+        <!--end of settings-->
+
+        <!--support-->
+        <a href="#" class="flex items-center space-x-2 hover:bg-teal-900 p-4"><img src="/assets/face-agent.svg"
+            class="w-6 h-6" /><span class="font-bold text-lg text-white">Support</span></a>
+        <!--end of support-->
+
+        <!--privacy-->
+        <a href="#" class="flex items-center space-x-2 hover:bg-teal-900 p-4"><img src="/assets/shield-check.svg"
+            class="w-6 h-6" /><span class="font-bold text-lg text-white">Privacy</span></a>
+        <!--end of privacy-->
+      </div>
+    </div>
+  </nav>
+  <!--END OF SIDEBAR-->
+
+  <!--CONTENT AREA-->
+  <div class="ml-64 bg-slate-300 h-screen">
+
+    <!--Header-->
+    <div class="bg-white h-52 p-4">
+
+      <div class="flex items-center">
+        <!--search bar-->
+        <div class=" flex w-3/5">
+          <img src="/assets/magnify.svg" alt="" class="w-10 h-10 mr-2">
+          <input type="text" class="w-full rounded-full bg-slate-300">
         </div>
 
-        <!--menu 1-->
-        <div class="flex flex-col mt-12">
-          <!--home-->
-          <a href="#" class="flex items-center space-x-2  hover:bg-teal-900 p-2"
-            ><img src="/assets/home.svg" class="w-6 h-6" /><span
-              class="font-bold text-lg text-white"
-              >Home</span
-            ></a
-          >
-          <!--end home-->
+        <div class="ml-auto flex mr-36 ">
+          <!--bell icon-->
+          <img src="assets/bell-ring-outline.svg" class="w-10 h-12 mr-10">
 
-          <!--profile-->
-          <a href="#" class="flex items-center space-x-2  hover:bg-teal-900 p-2"
-            ><img src="/assets/account.svg" class="w-6 h-6" /><span
-              class="font-bold text-lg text-white"
-              >Profile</span
-            ></a
-          >
-          <!--end profile-->
-
-          <!--messages-->
-          <a href="#" class="flex items-center space-x-2  hover:bg-teal-900 p-2"
-            ><img src="/assets/message.svg" class="w-6 h-6" /><span
-              class="font-bold text-lg text-white"
-              >Messages</span
-            ></a
-          >
-          <!--end messages-->
-
-          <!--history-->
-          <a href="#" class="flex items-center space-x-2  hover:bg-teal-900 p-2"
-            ><img src="/assets/history.svg" class="w-6 h-6" /><span
-              class="font-bold text-lg text-white"
-              >History</span
-            ></a
-          >
-          <!--end history-->
-
-          <!--tasks-->
-          <a href="#" class="flex items-center space-x-2  hover:bg-teal-900 p-2"
-            ><img src="/assets/calendar-check.svg" class="w-6 h-6" /><span
-              class="font-bold text-lg text-white"
-              >Task</span
-            ></a
-          >
-          <!--end tasks-->
-
-          <!--communities-->
-          <a href="#" class="flex items-center space-x-2  hover:bg-teal-900 p-2"
-            ><img src="/assets/account-group.svg" class="w-6 h-6" /><span
-              class="font-bold text-lg text-white"
-              >Communities</span
-            ></a
-          >
-          <!--end communities-->
-        </div>
-
-        <!--menu 2-->
-        <div class="flex flex-col mt-12">
-          <!--settings-->
-          <a href="#" class="flex items-center space-x-2  hover:bg-teal-900 p-2"
-            ><img src="/assets/cog.svg" class="w-6 h-6" /><span
-              class="font-bold text-lg text-white"
-              >Settings</span
-            ></a
-          >
-          <!--end of settings-->
-
-          <!--support-->
-          <a href="#" class="flex items-center space-x-2  hover:bg-teal-900 p-2"
-            ><img src="/assets/face-agent.svg" class="w-6 h-6" /><span
-              class="font-bold text-lg text-white"
-              >Support</span
-            ></a
-          >
-          <!--end of support-->
-
-          <!--privacy-->
-          <a href="#" class="flex items-center space-x-2  hover:bg-teal-900 p-2"
-            ><img src="/assets/shield-check.svg" class="w-6 h-6" /><span
-              class="font-bold text-lg text-white"
-              >Privacy</span
-            ></a
-          >
-          <!--end of privacy-->
+          <!--avatar-->
+          <div class="flex flex-row items-center space-x-4">
+            <img src="/assets/andrew.jpg" class="rounded-full w-10 h-10 border-2 border-black">
+            <span class="text-xl font-bold">John Doe</span>
+          </div>
         </div>
       </div>
-    </nav>
-    <!--END OF SIDEBAR-->
 
-    <!--CONTENT AREA-->
-    <div class="ml-64">
-      <h1>This is the content area</h1>
+
+
+
+
+
     </div>
-    <!--END OF CONTENT AREA-->
-  </body>
+<hr class="drop-shadow-2xl">
+  </div>
+
+  </div>
+  <!--END OF CONTENT AREA-->
+</body>
+
 </html>
