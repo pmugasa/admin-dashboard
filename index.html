@@ -117,7 +117,7 @@
     <!--END OF SIDEBAR-->
 
     <!--CONTENT AREA-->
-    <div class="ml-64 bg-slate-300 h-screen">
+    <div class="ml-64 bg-slate-300 h-screen overflow-hidden">
       <!--Header-->
       <div class="bg-white h-52 p-4">
         <div class="flex items-center">
@@ -182,44 +182,220 @@
           </div>
         </div>
       </div>
+
       <hr class="drop-shadow-2xl" />
       <!--END OF HEADER-->
 
-      <!--CARDS CONTENT-->
-      <div class="grid grid-cols-3 grid-rows-4 gap-4 mx-auto justify-items-center mt-8">
-        <!--col 1-->
-        <div>
-          <h2 class="text-xl font-semibold mb-4">Your Projects</h2>
-          <!--card 1-->
-          <div class="w-96 h-48 border-l-8 border-sky-600 bg-white rounded-lg drop-shadow-lg p-4">
+      <!--TITLES-->
+      <div class="ml-6 flex flex-row mt-4">
+        <h2 class="text-xl font-semibold">Your Projects</h2>
+        <h2 class="text-xl font-semibold ml-auto mr-80 px-4">Announcements</h2>
+      </div>
+      <!--END OF TITLES-->
+
+      <!--GRID CONTAINER-->
+      <div class="flex flex-row justify-items-center p-4">
+        <!--grid container 1-->
+        <div
+          class="grid grid-cols-2 grid-rows-3 gap-8 w-3/5 justify-items-center m-2"
+        >
+          <div class="col-start-1 col-end-2 row-start-1 row-end-2">
+            <!--card 1-->
+            <div
+              class="w-full h-40 border-l-8 border-sky-600 bg-white rounded-lg drop-shadow-lg p-4 hover:drop-shadow-2xl"
+            >
+              <!--description-->
+              <div>
+                <h3 class="text-lg font-semibold">Super Cool Project</h3>
+                <p
+                  class="text-sm text-gray-700 font-normal mt-2 overflow-hidden"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  expedita accusantium similique voluptatibus totam itaque alias
+                </p>
+              </div>
+              <!--icons-->
+              <div class="flex flex-row-reverse py-2 hover:cursor-pointer">
+                <img src="/assets/heart-outline.svg" class="w-6 h-6 mr-6" />
+                <img src="/assets/eye-plus-outline.svg" class="w-6 h-6 mr-6" />
+                <img src="/assets/star-plus-outline.svg" class="w-6 h-6 mr-6" />
+              </div>
+            </div>
+          </div>
+          <!--end of card-->
+
+          <!--card 2-->
+          <div
+            class="w-full h-40 border-l-8 border-sky-600 bg-white rounded-lg drop-shadow-lg p-4 col-start-2 col-end-3 row-start-1 row-end-2 hover:drop-shadow-2xl"
+          >
             <!--description-->
             <div>
-              <h3 class="text-lg font-semibold">Super Cool Project</h3>
-              <p class="text-md text-gray-700 font-normal mt-2 overflow-hidden">
+              <h3 class="text-lg font-semibold">Less Cool Project</h3>
+              <p class="text-sm text-gray-700 font-normal mt-2 overflow-hidden">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
                 expedita accusantium similique voluptatibus totam itaque alias
               </p>
             </div>
             <!--icons-->
-            <div class="flex flex-row-reverse mt-6">
+            <div class="flex flex-row-reverse py-2 hover:cursor-pointer">
               <img src="/assets/heart-outline.svg" class="w-6 h-6 mr-6" />
               <img src="/assets/eye-plus-outline.svg" class="w-6 h-6 mr-6" />
               <img src="/assets/star-plus-outline.svg" class="w-6 h-6 mr-6" />
             </div>
           </div>
+          <!--end of card 2-->
+
+          <!--card 3-->
+          <div
+            class="w-full h-40 border-l-8 border-sky-600 bg-white rounded-lg drop-shadow-lg p-4 row-start-2 row-end-3 col-start-1 col-end-2 hover:drop-shadow-2xl"
+          >
+            <!--description-->
+            <div>
+              <h3 class="text-lg font-semibold">Impossible App</h3>
+              <p class="text-sm text-gray-700 font-normal mt-2 overflow-hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                expedita accusantium similique voluptatibus totam itaque alias
+              </p>
+            </div>
+            <!--icons-->
+            <div class="flex flex-row-reverse py-2 hover:cursor-pointer">
+              <img src="/assets/heart-outline.svg" class="w-6 h-6 mr-6" />
+              <img src="/assets/eye-plus-outline.svg" class="w-6 h-6 mr-6" />
+              <img src="/assets/star-plus-outline.svg" class="w-6 h-6 mr-6" />
+            </div>
+          </div>
+          <!--end of card 3-->
+
+          <!--card 4-->
+          <div
+            class="w-full h-40 border-l-8 border-sky-600 bg-white rounded-lg drop-shadow-lg p-4 row-start-2 row-end-3 col-start-2 col-end-3 hover:drop-shadow-2xl"
+          >
+            <!--description-->
+            <div>
+              <h3 class="text-lg font-semibold">Easy Peasy App</h3>
+              <p class="text-sm text-gray-700 font-normal mt-2 overflow-hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                expedita accusantium similique voluptatibus totam itaque alias
+              </p>
+            </div>
+            <!--icons-->
+            <div class="flex flex-row-reverse py-2 hover:cursor-pointer">
+              <img src="/assets/heart-outline.svg" class="w-6 h-6 mr-6" />
+              <img src="/assets/eye-plus-outline.svg" class="w-6 h-6 mr-6" />
+              <img src="/assets/star-plus-outline.svg" class="w-6 h-6 mr-6" />
+            </div>
+          </div>
+          <!--end of card 4-->
+
+          <!--card 5-->
+          <div
+            class="w-full h-40 border-l-8 border-sky-600 bg-white rounded-lg drop-shadow-lg p-4 row-start-3 row-end-4 col-start-1 col-end-2 hover:drop-shadow-2xl"
+          >
+            <!--description-->
+            <div>
+              <h3 class="text-lg font-semibold">Ad Blocker</h3>
+              <p class="text-sm text-gray-700 font-normal mt-2 overflow-hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                expedita accusantium similique voluptatibus totam itaque alias
+              </p>
+            </div>
+            <!--icons-->
+            <div class="flex flex-row-reverse py-2 hover:cursor-pointer">
+              <img src="/assets/heart-outline.svg" class="w-6 h-6 mr-6" />
+              <img src="/assets/eye-plus-outline.svg" class="w-6 h-6 mr-6" />
+              <img src="/assets/star-plus-outline.svg" class="w-6 h-6 mr-6" />
+            </div>
+          </div>
+          <!--end of card 5-->
+
+          <!--card 6-->
+          <div
+            class="w-full h-40 border-l-8 border-sky-600 bg-white rounded-lg drop-shadow-lg p-4 row-start-3 row-end-4 col-start-2 col-end-3 hover:drop-shadow-2xl"
+          >
+            <!--description-->
+            <div>
+              <h3 class="text-lg font-semibold">Money Marker</h3>
+              <p class="text-sm text-gray-700 font-normal mt-2 overflow-hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                expedita accusantium similique voluptatibus totam itaque alias
+              </p>
+            </div>
+            <!--icons-->
+            <div class="flex flex-row-reverse py-2 hover:cursor-pointer">
+              <img src="/assets/heart-outline.svg" class="w-6 h-6 mr-6" />
+              <img src="/assets/eye-plus-outline.svg" class="w-6 h-6 mr-6" />
+              <img src="/assets/star-plus-outline.svg" class="w-6 h-6 mr-6" />
+            </div>
+          </div>
+          <!--end of card 6-->
         </div>
+        <!--end of grid container 1-->
 
-        <!--col 2-->
-        <div>2</div>
+        <!--grid container 2-->
+        <div class="flex flex-col w-2/5 items-center">
+          <!--card 1-->
+          <div
+            class=" bg-white rounded-lg drop-shadow-lg p-4 w-3/4"
+          >
+            <!--announcement 1-->
+            <div class="border-b-2 p-2">
+              <h3 class="text-lg font-semibold">Site Maintenance</h3>
+              <p class="text-sm text-gray-700 font-normal mt-2 overflow-hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                expedita accusantium similique voluptatibus totam itaque alias
+              </p>
+            </div>
+             <!--announcement 2-->
+             <div class=" p-2">
+              <h3 class="text-lg font-semibold">Community Share Day</h3>
+              <p class="text-sm text-gray-700 font-normal mt-2 overflow-hidden">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                expedita accusantium similique voluptatibus totam itaque alias
+              </p>
+            </div>
+             
+          </div>
+          <!--end of card 1-->
 
-        <!--col3-->
-        <div>
-          <h2>Announcements</h2>
-          <h2>Trending</h2>
+          <!--card 2 Title-->
+          <h2 class="text-xl font-semibold py-4 mr-auto ml-16 mt-4">Trending</h2>
+
+          <!--card 2-->
+          <div class="bg-white rounded-lg drop-shadow-lg p-4 w-3/4">
+
+            <!--nick-->
+            <div class="flex flex-row items-center space-x-4 p-2">
+              <img
+                src="/assets/nick.jpg"
+                class="rounded-full w-12 h-12 border-2 border-black hover:cursor-pointer"
+              />
+              <div class="flex flex-col">
+                <p class="text-sm font-bold">@nick</p>
+                <p class="text-md text-gray-700">World Peace Maker</p>
+              </div>
+            </div>
+            <!--nick ends-->
+
+
+             <!--jessi-->
+             <div class="flex flex-row items-center space-x-4 p-2">
+              <img
+                src="/assets/jessi2.webp"
+                class="rounded-full w-12 h-12 border-2 border-black hover:cursor-pointer"
+              />
+              <div class="flex flex-col">
+                <p class="text-sm font-bold">@jessi</p>
+                <p class="text-md text-gray-700">Always Annoyed</p>
+              </div>
+            </div>
+            <!--jessi ends-->
+
+             
+          </div>
+          <!--card 2 end-->
+
         </div>
       </div>
-      <!--END OF CARDS CONTENT-->
     </div>
-    <!--END OF CONTENT AREA-->
   </body>
 </html>
